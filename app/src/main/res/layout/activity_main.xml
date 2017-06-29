@@ -10,6 +10,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        //如果布局出现问题，则采用下面注释内的布局源
+        /**<WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+         </WebView>
+        <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>*/
+        
         <ProgressBar
         android:id="@+id/progress_bar"
         android:layout_width="wrap_content"
