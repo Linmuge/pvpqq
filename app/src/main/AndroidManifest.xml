@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gzyyu.pvp.qq">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>//允许应用更改网络连接的状态
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>//允许应用拥有完整的网络权限
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
