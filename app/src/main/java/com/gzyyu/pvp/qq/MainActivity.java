@@ -1,8 +1,12 @@
 package com.gzyyu.pvp.qq;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceError;
@@ -53,5 +57,28 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "网页加载失败,请检查网络",Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //显示menu中的布局
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.chat:
+                String qq="1206083231";
+                //跳转到QQ界面
+                String url = "mqqwpa://im/chat?chat_type=wpa&uin=" + qq
+                        + "&version=1";
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+                break;
+            default:
+                break;
+        }
+        return true;
     }
 }
