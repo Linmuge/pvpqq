@@ -38,14 +38,12 @@ public class MainActivity extends AppCompatActivity {
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
                 progressBar.setVisibility(View.VISIBLE);
-                Toast.makeText(MainActivity.this, "页面正在加载,请稍后......",Toast.LENGTH_SHORT).show();
             }
             //网页加载完成时调用，隐藏加载提示旋转进度条
             @Override
             public void onPageFinished(WebView view, String url) {
                 super.onPageFinished(view, url);
                 progressBar.setVisibility(View.GONE);
-                Toast.makeText(MainActivity.this, "页面加载完成.",Toast.LENGTH_SHORT).show();
             }
             //网页加载失败时调用，隐藏加载提示旋转进度条
             @Override
