@@ -59,18 +59,18 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         //显示menu中的布局
         getMenuInflater().inflate(R.menu.main,menu);
         return true;
-    }
+    }*/
 
-    @Override
+   /* @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()){
             case R.id.chat:
-                String qq="1206083231";
+                String qq="";//填写你自己的QQ号
                 //跳转到QQ界面
                 String url = "mqqwpa://im/chat?chat_type=wpa&uin=" + qq
                         + "&version=1";
@@ -80,5 +80,5 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return true;
-    }
+    }*/
 }
